@@ -1,0 +1,99 @@
+.discountForm {
+    margin: 80px 40px 0;
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+    border-radius: 12px;
+    background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
+
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin: 40px 20px 0;
+    }
+
+    img {
+        justify-self: center;
+        align-self: flex-end;
+
+        @media screen and (max-width: 1200px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 900px) {
+            position: absolute;
+            z-index: 0;
+        }
+    }
+
+    h1:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 32px 0;
+        gap: 16px;
+
+        @media screen and (max-width: 900px) {
+            z-index: 1;
+            width: 50%;
+            justify-self: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+
+        input {
+            background-color: inherit;
+            border-radius: 6px;
+            border: 1px solid var(--white);
+            padding: 16px 32px;
+            color: var(--white);
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                color: var(--white);
+            }
+
+            @media screen and (max-width: 1200px) {
+                padding: 12px 22px;
+            }
+
+            @media screen and (max-width: 900px) {
+                backdrop-filter: blur(16px);
+                min-width: 250px;
+            }
+
+            @media screen and (max-width: 600px) {
+                min-width: 0px;
+                width: 100%;
+                padding: 16px 16px;
+            }
+        }
+
+        input:last-child {
+            background-color: var(--white);
+            color: var(--black);
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

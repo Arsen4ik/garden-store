@@ -1,0 +1,135 @@
+.product {
+    // display: flex;
+    // flex-direction: row;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 32px;
+
+    img {
+        // width: 780px;
+        // width: 63%;
+        width: 100%;
+        height: auto;
+        max-height: 572px;
+        // height: 600px;
+        border-radius: 6px;
+        // max-height: 450px;
+        object-fit: cover;
+        align-self: self-start;
+
+        @media screen and (max-width: 900px) {
+            max-height: 350px;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        gap: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.product_categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        position: relative;
+
+        h1:first-child {
+            margin-bottom: 0;
+        }
+
+        div {
+            gap: 0;
+        }
+    }
+
+    div:last-of-type {
+        @media screen and (max-width: 900px) {
+            // flex-direction: column;
+
+            div:first-child {
+                flex-direction: row;
+            }
+
+            div:first-child+button {
+                // width: 180px;
+
+                @media screen and (max-width: 400px) {
+                    width: max-content;
+                }
+            }
+        }
+    }
+}
+
+.counter_block {
+    display: flex !important;
+    flex-direction: row;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column !important;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: row !important;
+    }
+}
+
+
+// .add_to_basket {
+//     padding: 16px 32px;
+//     border: 0;
+//     border-radius: 6px;
+//     font-size: large;
+//     font-weight: 600;
+
+//     @media screen and (max-width: 1200px) {
+//         padding: 12px 22px;
+//     }
+
+//     @media screen and (max-width: 900px) {
+//         padding: 9px 16px;
+//     }
+
+//     @media screen and (max-width: 600px) {
+//         padding: 6px 12px;
+//     }
+
+//     @media screen and (max-width: 900px) {
+//         padding: 3px 6px;
+//     }
+
+//     @media screen and (min-width: 900px) and (max-width: 1030px) {
+//         width: 200px;
+//     }
+
+//     // width: 313px;
+//     // max-width: 100%;
+//     color: white;
+//     background-color: var(--green);
+
+//     &:hover {
+//         color: white;
+//         background-color: var(--black);
+//         cursor: pointer;
+//     }
+
+//     &:active {
+//         background-color: var(--white);
+//         color: var(--black);
+//     }
+// }

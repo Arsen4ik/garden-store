@@ -1,0 +1,26 @@
+.input {
+    height: 40px;
+    width: 80px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--lightGray);
+    outline: none;
+
+    &::placeholder {
+        color: var(--gray);
+    }
+
+    &[type="checkbox"] {
+        height: 30px;
+        width: 30px;
+    }
+
+    @media screen and (max-width: 900px) {
+        padding-left: 10px;
+        height: 15px;
+    }
+}
+
+.selector {
+    width: 176px;
+}

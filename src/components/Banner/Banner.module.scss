@@ -1,0 +1,15 @@
+.banner {
+    margin-top: 0;
+    padding: 80px 40px;
+    height: 600px;
+    background-image: url('./Media/img.jpg');
+
+    @media screen and (max-width: 900px) {
+        height: 400px;
+        padding: 40px 20px;
+    }
+}
+
+.title {
+    font-size: 80px;
+}

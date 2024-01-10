@@ -1,0 +1,39 @@
+.portal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    padding: 0 30px;
+}
+
+.modal {
+    width: auto;
+    max-width: 548px;
+    background-color: var(--green);
+    border-radius: 12px;
+    padding: 32px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    img {
+        align-self: self-start;
+        width: 30px;
+        border-radius: 100%;
+        transition: all ease-in-out .2s;
+
+        &:hover {
+            transform: scale(1.25);
+        }
+    }
+}

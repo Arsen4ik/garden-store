@@ -1,0 +1,48 @@
+.not_found {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1,
+    p,
+    button {
+        margin: 0 auto;
+    }
+
+    h1,
+    p {
+        width: 664px;
+        text-align: center;
+
+        @media screen and (max-width: 900px) {
+            width: fit-content;
+        }
+
+    }
+
+    img {
+        @media screen and (max-width: 900px) {
+            height: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 70px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        gap: 16px;
+    }
+}

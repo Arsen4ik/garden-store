@@ -1,0 +1,106 @@
+.product_item {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+    border: 1px solid var(--lightGray);
+    border-radius: 6px;
+    gap: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+
+    img {
+        height: 350px;
+        width: 100%;
+        border-radius: 0;
+        object-fit: cover;
+        border-bottom: 1px solid var(--lightGray);
+        z-index: 0;
+
+        @media screen and (max-width: 1200px) {
+            height: 200px;
+        }
+    }
+
+    div {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 900px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    h2,
+    p {
+        padding: 0 32px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media screen and (max-width: 1200px) {
+            padding: 0 22px;
+        }
+    }
+
+    p:last-child {
+        color: var(--gray);
+        text-decoration: line-through;
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 250px;
+    }
+
+
+    &:nth-child(odd) {
+        @media screen and (max-width: 900px) {
+            justify-self: end;
+        }
+    }
+}
+
+.add_to_basket {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 25%;
+    z-index: 1;
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 6px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    background-color: var(--green);
+
+    &:hover {
+        color: white;
+        background-color: var(--black);
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: var(--white);
+        color: var(--black);
+    }
+
+    @media screen and (max-width: 1200px) {
+        bottom: 32%;
+    }
+
+    @media screen and (max-width: 900px) {
+        bottom: 27%;
+    }
+
+    @media screen and (max-width: 600px) {
+        bottom: 23%;
+    }
+}
+
+.add_to_basket:disabled {
+    cursor: no-drop;
+    background-color: var(--lightGray);
+    color: var(--black);
+}

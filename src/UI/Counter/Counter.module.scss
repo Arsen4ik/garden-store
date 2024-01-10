@@ -1,0 +1,74 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--lightGray);
+    border-radius: 6px;
+    width: fit-content;
+
+    @media screen and (max-width: 1200px) {
+        height: 48px;
+    }
+
+    @media screen and (max-width: 900px) {
+        height: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 28px;
+    }
+
+    p {
+        width: 58px;
+        height: 58px;
+        color: var(--gray);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 1200px) {
+            width: 48px;
+            height: 48px;
+        }
+
+        @media screen and (max-width: 900px) {
+            height: 40px;
+        }
+
+        @media screen and (max-width: 600px) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    p:first-child {
+        border-right: 1px solid var(--lightGray);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--black);
+        }
+    }
+
+    p:last-child {
+        border-left: 1px solid var(--lightGray);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--black);
+        }
+    }
+
+    p:nth-child(2) {
+        width: 96px;
+        color: var(--black);
+
+        @media screen and (max-width: 1200px) {
+            width: 82px;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 70px;
+        }
+    }
+}

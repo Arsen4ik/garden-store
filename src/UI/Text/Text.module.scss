@@ -1,0 +1,163 @@
+.black {
+    color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+.green {
+    color: var(--green);
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.lightGray {
+    color: var(--lightGray);
+}
+
+
+.h1 {
+    font-weight: 700;
+    font-size: 64px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 46px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 36px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 28px;
+    }
+}
+
+.h2 {
+    font-weight: 600;
+    font-size: 40px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 14px;
+    }
+}
+
+.p {
+    font-weight: 500;
+    font-size: 20px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 16px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.thin {
+    font-weight: 500;
+}
+
+.p-smaller {
+    font-size: 16px;
+    font-weight: 400;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 8px;
+    }
+}
+
+.p-bold {
+    font-weight: 600;
+}
+
+.title {
+    font-size: 96px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 76px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 47px;
+    }
+}
+
+.discont_price {
+    padding-left: 0 !important;
+    text-decoration: line-through;
+    color: var(--gray);
+    align-self: flex-end;
+    font-weight: 500;
+}
+
+.discount_percent {
+    padding: 8px !important;
+    background-color: var(--green);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 12px;
+
+    @media screen and (max-width: 600px) {
+        padding: 4px !important;
+    }
+}
+
+.discount_percent_left {
+    padding: 8px !important;
+    background-color: var(--green);
+    height: min-content;
+    border-radius: 12px;
+
+    @media screen and (max-width: 600px) {
+        padding: 4px !important;
+    }
+}
+
+
+.p-smaller-input_price_sorting_value {
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 100px;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 13px;
+        margin-left: 86px;
+    }
+
+    @media screen and (max-width: 900px) {
+        margin-left: 68px;
+    }
+
+    @media screen and (max-width: 600px) {}
+}
