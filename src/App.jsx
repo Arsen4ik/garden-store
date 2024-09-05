@@ -34,7 +34,7 @@ const router = createBrowserRouter(
 
 const App = () => {
   return (
-    <Suspense fallbac={<Text text="Loading...🌀" color="gray" type="h1" />}>
+    <Suspense fallback={<Text text="Loading...🌀" color="gray" type="h1" />}>
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>

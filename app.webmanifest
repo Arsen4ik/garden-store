@@ -1,0 +1,8 @@
+{
+    "name": "garden store",
+    "short_name": "G&S🏡",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "description": "it's the best garden store ever"
+}
