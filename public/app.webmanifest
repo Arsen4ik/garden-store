@@ -1,0 +1,35 @@
+{
+    "name": "garden store",
+    "short_name": "G&S🏡",
+    "start_url": "./",
+    "scope": "./",
+    "theme_color": "#339933",
+    "background_color": "#339933",
+    "display": "standalone",
+    "description": "it's the best garden store ever",
+    "icons": [
+        {
+            "src": "./garden-clear.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "./garden-clear.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "./garden-clear.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "./garden-clear.png",
+            "sizes": "1170x2532",
+            "type": "image/png"
+        }
+    ]
+}
